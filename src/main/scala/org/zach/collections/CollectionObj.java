@@ -1,4 +1,4 @@
-package org.zach;
+package org.zach.collections;
 
 import java.util.ArrayList;
 import java.util.Collection;
