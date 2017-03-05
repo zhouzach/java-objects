@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class CollectionObj {
+public class ArrayListObj {
     public static void main(String[] args) {
         Collection<String> c = new ArrayList<>(10);
         c.add("hello");
@@ -17,5 +17,6 @@ public class CollectionObj {
         it.next();
         it.remove();
         c.iterator().forEachRemaining(System.out::println);
+        c.forEach(System.out::println);
     }
 }
