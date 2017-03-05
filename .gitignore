@@ -21,6 +21,8 @@ project/plugins/project/
 .worksheet
 .idea
 
-
 # redis
 *.rdb
+
+#test files
+*.txt
