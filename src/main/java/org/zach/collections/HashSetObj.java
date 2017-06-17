@@ -9,6 +9,9 @@ public class HashSetObj {
         Set<String> words = new HashSet<>();
 
         try(Scanner in = new Scanner(System.in)) {
+            System.out.println("please enter some words:");
+
+            //run the program in intellij on mac, command + d to break while loop
             while (in.hasNext()) {
                 words.add(in.next());
             }
