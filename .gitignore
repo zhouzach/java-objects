@@ -23,6 +23,7 @@ project/plugins/project/
 
 # Java-IDE specific
 out/
+.idea
 
 # redis
 *.rdb
