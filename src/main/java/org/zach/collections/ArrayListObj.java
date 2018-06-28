@@ -27,6 +27,12 @@ public class ArrayListObj {
         }
 
         List<String> strings = new ArrayList<String>(Arrays.asList("foo", "bar", "baz"));
-        List<String> s = Arrays.asList("foo", "bar", "baz");
+        System.out.println("strings length:" + strings.size());
+        strings.add("meixi");
+        System.out.println("strings length:" + strings.size());
+        List<String> strList = Arrays.asList("foo", "bar", "baz");
+        System.out.println("strList length:" + strList.size());
+        strList.add("m");
+        System.out.println("strList length:" + strList.size());
     }
 }
