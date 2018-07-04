@@ -1,4 +1,4 @@
-package org.zach;
+package org.zach.string;
 
 public class EqualMethod {
 
