@@ -1,8 +1,6 @@
 package org.zach.collections;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
+import java.util.*;
 
 public class ArrayListObj {
     public static void main(String[] args) {
@@ -18,5 +16,23 @@ public class ArrayListObj {
         it.remove();
         c.iterator().forEachRemaining(System.out::println);
         c.forEach(System.out::println);
+
+
+        Integer[] arr = new Integer[] {1, 2};
+
+        List<Integer> list = new ArrayList<>(5);
+        list.forEach(System.out::print);
+        for(int i = 0; i< arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+        List<String> strings = new ArrayList<String>(Arrays.asList("foo", "bar", "baz"));
+        System.out.println("strings length:" + strings.size());
+        strings.add("meixi");
+        System.out.println("strings length:" + strings.size());
+        List<String> strList = Arrays.asList("foo", "bar", "baz");
+        System.out.println("strList length:" + strList.size());
+        strList.add("m");
+        System.out.println("strList length:" + strList.size());
     }
 }
