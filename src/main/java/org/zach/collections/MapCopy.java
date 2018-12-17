@@ -1,4 +1,4 @@
-package org.zach.concurrent;
+package org.zach.collections;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadFactory;
 /**
  * Created by Zach on 2018/2/11.
  */
-public class Copy {
+public class MapCopy {
 
     public static void main(String[] args) {
         Map<String, Integer> m = new HashMap<>();
