@@ -30,9 +30,21 @@ public class ArrayListObj {
         System.out.println("strings length:" + strings.size());
         strings.add("meixi");
         System.out.println("strings length:" + strings.size());
+
         List<String> strList = Arrays.asList("foo", "bar", "baz");
         System.out.println("strList length:" + strList.size());
-        strList.add("m");
-        System.out.println("strList length:" + strList.size());
+        //UnsupportedOperationException
+//        strList.add("m");
+        strList.get(0);
+        System.out.println("strList length:" + strList.get(0));
+
+
+        List<Object> objects = new ArrayList<>();
+        objects.add("hello");
+        objects.add(3);
+        objects.forEach(System.out::println);
+
+        List<List<Object>> lists = new ArrayList<>();
+        lists.add(objects);
     }
 }
