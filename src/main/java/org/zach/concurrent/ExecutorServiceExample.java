@@ -3,7 +3,7 @@ package org.zach.concurrent;
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
-public class ExecutorService {
+public class ExecutorServiceExample {
 
     public void waitit() {
         Thread.yield();
