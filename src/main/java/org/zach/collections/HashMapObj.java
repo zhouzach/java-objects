@@ -1,5 +1,6 @@
 package org.zach.collections;
 
+
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -37,5 +38,49 @@ public class HashMapObj {
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
 
+    }
+
+    public static void iterateByForEach(Map<String, String> map){
+        map.forEach((k, v) -> {
+            System.out.println(k + ":" + v);
+
+        });
+    }
+
+    public static String mkStringByIterator(Map<String, String> map){
+        StringBuilder builder = new StringBuilder();
+
+        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+        Map.Entry<String, String> first = iterator.next();
+
+        String firstData = first.getKey() + first.getValue();
+        builder.append(firstData);
+
+        iterator.forEachRemaining(entry -> {
+            builder.append(" union ");
+            String sql = "select t.*, '" + entry.getValue() + "' YEAR from " + entry.getKey();
+            builder.append(sql);
+        });
+
+        return builder.toString();
+    }
+
+
+    public static String mkStringByForLoop(Map<String, String> map){
+        StringBuilder builder = new StringBuilder();
+
+        Object[] keys = map.keySet().toArray();
+
+        String firstSql = "select t.*, '" + map.get(keys[0]) + "' YEAR from " + keys[0];
+        builder.append(firstSql);
+
+        for (int i = 1; i < keys.length; i++) {
+            builder.append(" union ");
+
+            String sql = "select t.*, '" + map.get(keys[i]) + "' FJJDM from " + keys[i];
+            builder.append(sql);
+        }
+
+        return builder.toString();
     }
 }

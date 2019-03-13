@@ -13,5 +13,12 @@ public class Main {
         String ss =sb.toString().replaceAll("are", "123"+"table");
         System.out.println(ss);
         System.out.println(sb.toString());
+
+        String mon = "20190102".substring(4,6);
+        System.out.println(mon);
+
+
+        int i = 2 < 12 ? 2 : 12;
+        System.out.println(i);
     }
 }
