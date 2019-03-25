@@ -1,4 +1,6 @@
 
+src/main/resources
+
 ### Scala template
 *.class
 *.log

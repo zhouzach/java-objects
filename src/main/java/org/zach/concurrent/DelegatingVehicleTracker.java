@@ -3,9 +3,7 @@ package org.zach.concurrent;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Created by Zach on 2018/2/7.
- */
+
 public class DelegatingVehicleTracker {
 
     private final ConcurrentHashMap<String, Point> locations;

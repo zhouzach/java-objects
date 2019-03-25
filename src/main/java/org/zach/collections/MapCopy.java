@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadFactory;
 
-/**
- * Created by Zach on 2018/2/11.
- */
+
 public class MapCopy {
 
     public static void main(String[] args) {

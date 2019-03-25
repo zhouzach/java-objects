@@ -3,9 +3,7 @@ package org.zach.concurrent;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 
-/**
- * Created by Zach on 2018/2/20.
- */
+
 public class Interrupted {
     BlockingDeque<String> q;
 
