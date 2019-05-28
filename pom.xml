@@ -14,7 +14,7 @@
     </properties>
 
     <groupId>org.rabbit</groupId>
-    <artifactId>toy</artifactId>
+    <artifactId>java-objects</artifactId>
     <packaging>pom</packaging>
     <version>0.1.0</version>
 
