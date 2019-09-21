@@ -10,6 +10,8 @@ public class RandomObj {
         System.out.println(b);
 
         int i = rand.nextInt();
+        int i48 = rand.nextInt(48);
         System.out.println(i);
+        System.out.println(i48);
     }
 }

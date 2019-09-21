@@ -70,6 +70,15 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.common/google-collect -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.1-jre</version>
+            <!-- or, for Android: -->
+        </dependency>
+
+
 
     </dependencies>
 
