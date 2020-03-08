@@ -3,7 +3,8 @@ package org.zach.collections;
 import java.util.*;
 
 public class ArrayListObj {
-    public static void main(String[] args) {
+
+    public static void init(){
         Collection<String> c = new ArrayList<>(10);
         c.add("hello");
         c.add("collection");
@@ -46,5 +47,21 @@ public class ArrayListObj {
 
         List<List<Object>> lists = new ArrayList<>();
         lists.add(objects);
+
+    }
+    public static void main(String[] args) {
+        modify();
+    }
+
+    public static void modify(){
+        byte[] b = new byte[]{'a','a'};
+
+        b[1]++;
+        System.out.println(Arrays.toString(b));
+
+        Integer[] num = new Integer[]{1,2};
+        num[1]++;
+        System.out.println(Arrays.toString(num));
+
     }
 }
